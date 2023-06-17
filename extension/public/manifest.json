@@ -1,0 +1,22 @@
+{
+  "name": "Macrome",
+  "description": "Shunya incentivizes climate conscious consumer decisions by tracking the carbon emissions of your online purchases in real-time.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Track your macros"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.allrecipes.com/*", "*://*.amazon.in/*"],
+      "js": ["recipes.js", "shopping.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}

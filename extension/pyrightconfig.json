@@ -1,0 +1,13 @@
+{
+  "exclude": [".venv"],
+  "venvPath": "./.venv/",
+  "typingsPath": "./typestubs",
+
+  "executionEnvironments": [
+    {
+      "root": "./",
+      "venv": "./",
+      "extraPaths": ["./3rd-modules"]
+    }
+  ]
+}
